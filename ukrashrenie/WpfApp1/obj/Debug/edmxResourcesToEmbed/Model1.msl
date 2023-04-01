@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DemkaModelContainer" CdmEntityContainer="DemkaEntities">
+    <EntitySetMapping Name="Cостав_Заказа">
+      <EntityTypeMapping TypeName="DemkaModel.Cостав_Заказа">
+        <MappingFragment StoreEntitySet="Cостав_Заказа">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_заказа" ColumnName="id_заказа" />
+          <ScalarProperty Name="id_товара" ColumnName="id_товара" />
+          <ScalarProperty Name="код_товара" ColumnName="код_товара" />
+          <ScalarProperty Name="количество_товара" ColumnName="количество_товара" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Заказ">
+      <EntityTypeMapping TypeName="DemkaModel.Заказ">
+        <MappingFragment StoreEntitySet="Заказ">
+          <ScalarProperty Name="id_заказа" ColumnName="id_заказа" />
+          <ScalarProperty Name="дата_заказа" ColumnName="дата_заказа" />
+          <ScalarProperty Name="дата_доставки" ColumnName="дата_доставки" />
+          <ScalarProperty Name="пункт_выдачи" ColumnName="пункт_выдачи" />
+          <ScalarProperty Name="id_пользователя" ColumnName="id_пользователя" />
+          <ScalarProperty Name="код_для_получения" ColumnName="код_для_получения" />
+          <ScalarProperty Name="статус_заказа" ColumnName="статус_заказа" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Категория_Товаров">
+      <EntityTypeMapping TypeName="DemkaModel.Категория_Товаров">
+        <MappingFragment StoreEntitySet="Категория_Товаров">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="категория_товара" ColumnName="категория_товара" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пользователь">
+      <EntityTypeMapping TypeName="DemkaModel.Пользователь">
+        <MappingFragment StoreEntitySet="Пользователь">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="фио" ColumnName="фио" />
+          <ScalarProperty Name="логин" ColumnName="логин" />
+          <ScalarProperty Name="пароль" ColumnName="пароль" />
+          <ScalarProperty Name="тип_пользователя" ColumnName="тип_пользователя" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пункты_выдачи">
+      <EntityTypeMapping TypeName="DemkaModel.Пункты_выдачи">
+        <MappingFragment StoreEntitySet="Пункты_выдачи">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="адрес" ColumnName="адрес" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Типы_пользователей">
+      <EntityTypeMapping TypeName="DemkaModel.Типы_пользователей">
+        <MappingFragment StoreEntitySet="Типы_пользователей">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Роли" ColumnName="Роли" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Товары">
+      <EntityTypeMapping TypeName="DemkaModel.Товары">
+        <MappingFragment StoreEntitySet="Товары">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Артикул" ColumnName="Артикул" />
+          <ScalarProperty Name="наименование" ColumnName="наименование" />
+          <ScalarProperty Name="единица_измерения" ColumnName="единица_измерения" />
+          <ScalarProperty Name="стоимость" ColumnName="стоимость" />
+          <ScalarProperty Name="размер_максимально_возможной_скидки" ColumnName="размер_максимально_возможной_скидки" />
+          <ScalarProperty Name="производитель" ColumnName="производитель" />
+          <ScalarProperty Name="поставщик" ColumnName="поставщик" />
+          <ScalarProperty Name="категория_товара" ColumnName="категория_товара" />
+          <ScalarProperty Name="действующая_скидка" ColumnName="действующая_скидка" />
+          <ScalarProperty Name="количество_на_складе" ColumnName="количество_на_складе" />
+          <ScalarProperty Name="описание" ColumnName="описание" />
+          <ScalarProperty Name="изображение" ColumnName="изображение" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
